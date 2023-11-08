@@ -1,3 +1,2 @@
-
-# Trainee
-Repositório Código Mini Sumo
+# Strategy
+Branch dedicada a estratégia de combate.
