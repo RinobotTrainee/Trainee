@@ -10,7 +10,15 @@ strategy::strategy(){
 }
 
 int initial_startegy(){
-    
+        switch(switchOperator){
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default: ;
+    }
 }
 
 void update(int aP1, int aP2, bool dP1){
@@ -20,5 +28,9 @@ void update(int aP1, int aP2, bool dP1){
 }
 
 void make_decision(){
+    // if(){
 
+    // }else if(){
+
+    // }
 }

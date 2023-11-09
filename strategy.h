@@ -4,14 +4,14 @@
 #include <math.h>
 using namespace std;
 
-int waiting_aP1, waiting_aP2;
+int waiting_aP1, waiting_aP2, switchOperator;
 bool wiating_dP1;
 
 class strategy{
     private:
     /*definindo os pinos como propriedades
     (estados insternos)*/
-        int aP1, aP2;
+        int aP1, aP2, switchOperetor;
         bool dP1;
         
     public:
