@@ -1,36 +1,55 @@
 /*Implementação dos métodos*/
 
+
+/*ler pinos aqui */
 #include "strategy.h"
 
-/*inicializando construtor padrão com estado nulo*/
-strategy::strategy(){
-    aP1 = 0;
-    aP2 = 0;
-    dP1 = false;
-}
+InitialStrategy::InitialStrategy(){
+    this->finish = false;
+    this->pin1 = pin1;
+    this->pin2 = pin2;
+    this->pin3 = pin3;
+};
 
-int initial_startegy(){
-        switch(switchOperator){
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        default: ;
-    }
-}
+int set_strategy(/*Motor &m1, Motor &m2*/){
+    // bool set_pin1 = digitalRead(pin1); //analogicRead
+    // bool set_pin2 = digitalRead(pin2);
+    // bool set_pin3 = digitalRead(pin3);
+    // int escolha = int(set_pin1) + (int(set_pin2) << 1) + (int(set_pin3) << 2);
 
-void update(int aP1, int aP2, bool dP1){
-    aP1 = waiting_aP1;
-    aP2 = waiting_aP2;
-    dP1 = wiating_dP1;
-}
-
-void make_decision(){
-    // if(){
-
-    // }else if(){
-
+    // switch(/*escolha*/){
+    //     case 0: 
+    //     //potencia dos motores -> movimentação
+    //     case 1: 
+    //     case 2: 
+    //     case 3: 
+    //     case 4: 
+    //     case 5: 
+    //     case 6: 
+    //     case 7: 
+    //     default: 
+    //         break;
     // }
 }
+
+AutoStrategy::AutoStrategy(){};
+
+void update_motor(/*Vision &v1, Motor &m1, Motor &m2*/){
+    // if(){
+    //     return;
+    // }
+    // else if(){
+    //     return;
+    // }
+    // else if(){
+    //     return;
+    // }
+    // else if(){
+    //     return;
+    // }
+    // else if(){
+    //     return;
+    // }
+    // return;
+}
+

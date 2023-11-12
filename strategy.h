@@ -1,26 +1,30 @@
 /*Definição das propriedades e métodos;*/
 
 #include <iostream>
-#include <math.h>
-using namespace std;
+//#include <arduino.h>
 
-int waiting_aP1, waiting_aP2, switchOperator;
-bool wiating_dP1;
+//incluir o arquivo da visão e motor
 
-class strategy{
-    private:
-    /*definindo os pinos como propriedades
-    (estados insternos)*/
-        int aP1, aP2, switchOperetor;
-        bool dP1;
-        
+class InitialStrategy{ //dipswitch
     public:
-    /*definido construtor padão das propriedades*/
-        strategy();
-    /*definido as estrategias inciais*/
-        int initial_strategy();
-    /*definindo método para atualização de estados*/
-        void update(int aP1, int aP2, bool dP);
-    /*definindo método para tomada de decisão*/
-        void makes_decision();
+        bool finish;
+        int pin1, pin2, pin3;
+
+        InitialStrategy();
+        //int set_strategy(Motor &m1, Motor &m2);
 };
+
+class AutoStrategy{
+    public:
+        AutoStrategy();
+        //void update_motor(Vision &v1, Motor &m1, &m2);
+};
+
+//classe list - setar os valores de potencia do motor e tempo de funcionamento 
+
+//dipswitch - equação que trasnforme binario em 1,2 3... n;
+//-- atz ´(selecta a) + (int(select b) << 1) + (int (selectc) << 2)
+
+//tempo while para o switch para simular o tempo
+
+//millis (funcao arduino)
