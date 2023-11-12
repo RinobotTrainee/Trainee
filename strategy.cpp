@@ -4,6 +4,12 @@
 /*ler pinos aqui */
 #include "strategy.h"
 
+
+
+// pinMode(pin1 , INPUT);
+// pinMode(pin2 , INPUT);
+// pinMode(pin3 , INPUT);
+
 InitialStrategy::InitialStrategy(){
     this->finish = false;
     this->pin1 = pin1;
