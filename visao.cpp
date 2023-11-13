@@ -1,25 +1,53 @@
-/*Implementação dos métodos*/
-
 #include "visao.h"
+#include "Arduino.h"
 
-/*inicializando construtor padrão com estado nulo*/
-visao::visao()
-{
-    vfP1 = 0;
-    vtP2 = 0;
-    vdP3 = 0;
-    veP4 = 0;
-    eP1 = false;
+#define LEFT_EDGE_SENSOR  x1 //pinagem
+#define RIGHT_EDGE_SENSOR x2 //pinagem
+#define REAR_EDGE_SENSOR  x3 //pinagem, substituir x pelo pino
+
+#define EDGE_THRESHOLD 400
+
+static visao esqueda(LEFT_EDGE_SENSOR);
+static visao direita(RIGHT_EDGE_SENSOR);
+static visao costas(REAR_EDGE_SENSOR);
+
+NaVisao::NaVisao() {
 }
 
-int initial_vision()
-{
-        
+void NaVisao::init() {
+  esqueda.init();
+  direita.init();
+  costas.init();
+
+}
+// verifica se o inimigo esta na frente
+bool NaVisao::nafrente() {
+  return nadireita() || naesquerda() || nacosta();
 }
 
-void update(int aP1, int aP2, bool dP1)
-{
+// verifica se o inimigo esta na esquerda
+bool NaVisao::naesquerda() {
+  return esquerda.navisao();
+}
 
+// verifica se o inimigo esta direita
+bool NaVisao::nadireita() {
+  return direita.navisao();
+}
 
+// verifica se o inimigo esta atras do robo
+bool NaVisao::nacosta() {
+  return costas.navisao();
+}
 
+visao::visao(int outputPin) {
+  pin = outputPin;
+}
+
+void visao::init() {
+  pinMode(pin, OUTPUT);
+}
+
+bool visao::navisao() {
+  return analogRead(pin) > EDGE_THRESHOLD;
 }
