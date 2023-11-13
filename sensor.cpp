@@ -14,5 +14,5 @@ void Sensor::init() {
 int Sensor::distance() {
   int value = analogRead(pin);
 
-  return;
+  return value;
 }
