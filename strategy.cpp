@@ -5,7 +5,6 @@
 #include "strategy.h"
 
 
-
 // pinMode(pin1 , INPUT);
 // pinMode(pin2 , INPUT);
 // pinMode(pin3 , INPUT);
@@ -41,21 +40,21 @@ int set_strategy(/*Motor &m1, Motor &m2*/){
 AutoStrategy::AutoStrategy(){};
 
 void update_motor(/*Vision &v1, Motor &m1, Motor &m2*/){
-    // if(){
-    //     return;
-    // }
-    // else if(){
-    //     return;
-    // }
-    // else if(){
-    //     return;
-    // }
-    // else if(){
-    //     return;
-    // }
-    // else if(){
-    //     return;
-    // }
-    // return;
-}
+//     if(){
+//         return;
+//     }
+//     else if(){
+//         return;
+//     }
+//     else if(){
+//         return;
+//     }
+//     else if(){
+//         return;
+//     }
+//     else if(){
+//         return;
+//     }
+//     return;
+// }
 
