@@ -1,5 +1,9 @@
 #include "visao.h"
+<<<<<<< HEAD
 #include <Arduino.h>
+=======
+#include <arduino.h>
+>>>>>>> 919104b548225a2de6e5eb3411a120c42f3607e7
 
 #define LEFT_EDGE_SENSOR  x1 //pinagem
 #define RIGHT_EDGE_SENSOR x2 //pinagem

@@ -1,3 +1,8 @@
+#include <arduino.h>
+#ifndef visao
+#define visao
+
+
 class NaVisao {
   public:
 
@@ -22,3 +27,5 @@ class visao {
 
     int pin;
 };
+
+#endif
