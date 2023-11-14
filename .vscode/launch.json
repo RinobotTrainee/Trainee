@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/rodri/Desktop/diretorio_exe/Traineee/Trainee",
+      "program": "c:/Users/rodri/Desktop/diretorio_exe/Traineee/Trainee/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
