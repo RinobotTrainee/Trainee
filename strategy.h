@@ -1,35 +1,24 @@
-/*Definição das propriedades e métodos;*/
-#ifndef STRATEGY_H
-#define STRATEGY.H
+// #ifndef STRATEGY_H
+// #define STRATEGY_H
 
-#include <iostream>
+// #include <iostream>
+// #include "Motor.h"
+// #include"visao.h"
 
-//#include <arduino.h>
 
-//incluir o arquivo da visão e motor
+// class InitialStrategy{
+//     public:
+//         bool finish;
+//         int pin1, pin2, pin3;
 
-class InitialStrategy{ //dipswitch
-    public:
-        bool finish;
-        int pin1, pin2, pin3;
+//         InitialStrategy();
+//         int InitialStrategi::set_strategy();
+// };
 
-        InitialStrategy();
-        //int set_strategy(Motor &m1, Motor &m2);
-};
+// class AutoStrategy{
+//     public:
+//         AutoStrategy();
+//         void AutoStrategy::upadate_motor();
+// };
 
-class AutoStrategy{
-    public:
-        AutoStrategy();
-        //void update_motor(Vision &v1, Motor &m1, &m2);
-};
-
-#endif
-
-//classe list - setar os valores de potencia do motor e tempo de funcionamento 
-
-//dipswitch - equação que trasnforme binario em 1,2 3... n;
-//-- atz ´(selecta a) + (int(select b) << 1) + (int (selectc) << 2)
-
-//tempo while para o switch para simular o tempo
-
-//millis (funcao arduino)
+// #endif

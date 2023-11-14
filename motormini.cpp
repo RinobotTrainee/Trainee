@@ -11,9 +11,9 @@ Motor_m::Motor_m(uint8_t pinMotorA1, uint8_t pinMotorA2, uint8_t pinMotorB1, uin
     pinMode(pinMotorB1, OUTPUT);
     pinMode(pinMotorB2, OUTPUT);
     m_pinA1 = pinMotorA1; // velocidade
-    m_pinA2 = pinMotorA2; // direção
+    m_pinA2 = pinMotorA2; // direï¿½ï¿½o
     m_pinB1 = pinMotorB1; // velocidade
-    m_pinB2 = pinMotorB2; // direção
+    m_pinB2 = pinMotorB2; // direï¿½ï¿½o
 }
 
 void Motor_m::frente(uint16_t pwm)
@@ -32,9 +32,9 @@ void Motor_m::atras(uint16_t pwm)
     digitalWrite(m_pinB2, LOW); 
 }
 
-void Motor_m::direita(uint16_t pwm)
+void Motor_m::direita(uint16_t pwm) 
 {
-    analogWrite(m_pinA1, pwm);
+    analogWrite(m_pinA1, pwm); 
     digitalWrite(m_pinA2, HIGH);
     analogWrite(m_pinB1, pwm);
     digitalWrite(m_pinB2, LOW); 
