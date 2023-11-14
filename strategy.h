@@ -1,6 +1,9 @@
 /*Definição das propriedades e métodos;*/
+#ifndef STRATEGY_H
+#define STRATEGY.H
 
 #include <iostream>
+
 //#include <arduino.h>
 
 //incluir o arquivo da visão e motor
@@ -19,6 +22,8 @@ class AutoStrategy{
         AutoStrategy();
         //void update_motor(Vision &v1, Motor &m1, &m2);
 };
+
+#endif
 
 //classe list - setar os valores de potencia do motor e tempo de funcionamento 
 
